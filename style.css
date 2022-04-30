@@ -1,0 +1,97 @@
+*{
+    width: 500px; 
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(16, 16, 41);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.title-principal{
+     color: azure;
+     max-width: 200;     
+     margin: 10px 0;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container-input{
+    max-width: 400;
+    margin: 10px 0;
+}
+.container-input span{
+    color: white;
+    font-size: 20px;
+}
+.slider{
+    -webkit-appearance: none;
+    width: 100%;
+    border-radius: 5px;
+    background: whitesmoke;
+    height: 19px;
+    outline: none;
+    margin-top: 10px;
+}
+.button-gerar{
+    height: 30px; 
+    background-color: rgb(33, 138, 29);
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 40px;
+    color: white;
+    font-size: bold;
+    font-size: 20px;
+}
+.container-senha{
+    max-width: 480px;
+    margin: 14px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.title-senha{
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+#senha{
+    height: 40px;
+    width: 100%;
+    background-color: rgb(36, 36, 114);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: 1px solid rgb(57, 57, 124);
+}
+.hide{
+    display: none;
+}
+.msg{
+    color: white;
+    width: 100%;
+    position: relative;
+    top: 20px;
+    padding: 6px 8px;
+    background: rgb(57, 57, 124);
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.container-senha:hover .msg {
+    visibility: visible;
+    bottom: 50px;
+    opacity: 1;
+}
+
